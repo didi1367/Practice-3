@@ -1,99 +1,120 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
-body{
+
+body {
     background-color: hsl(257, 40%, 49%);
     background-image: url('images/bg-desktop.svg');
     background-size: cover;
     background-repeat: no-repeat;
     font-family: Poppins, sans-serif;
 }
-header{
-    padding: 3em 0 1em 3em;
-}
-div.content-container{
+
+div.content-container {
     max-width: 1440px;
     margin: 0 auto;
 }
-div.center{
+
+header {
+    padding: 3em 0 1em 3em;
+}
+
+div.center {
     display: flex;
     justify-content: center;
     align-items: flex-start;
-    /* flex-wrap: wrap; */
     padding: 3em;
-    
-
-
 }
 
-
-div.text{
+div.text {
     padding: 35px;
-    /* flex-grow: 1; */
-    /* width: 100%; */
-    /* flex-shrink: 1; */
-}
-img.center{
-/* max-width: 60%; */
 }
 
+img.center {
+    max-width: 60%;
+    flex-basis: 50%;
+}
 
-
-
-h2{
+h2 {
     color: white;
-    /* font-size: 4vw; */
     font-weight: 600;
-    
 }
-p{
+
+p {
     color: white;
     font-weight: 400;
-    /* font-size: 2vw; */
     text-align: left;
-  
 }
-button{
+
+button {
     border-radius: 2em;
-    /* padding: 1em; */
     width: 220px;
     height: 55px;
     color: hsl(257, 40%, 49%);
     font-size: large;
 }
-.social
-{
-    /* direction: rtl; */
+
+button:hover {
+    background-color: hsl(300, 69%, 71%);
+    color: white;
+}
+
+.social {
     text-align: right;
     color: white;
     padding-right: 2em;
     font-size: 20px;
-    /* text-align: justify; */
 }
-i{
+
+i {
     border: 1px solid white;
     border-radius: 2em;
-    padding: 10px 0 0 0 ;
+    padding: 10px 0 0 0;
     width: 40px;
     height: 30px;
     text-align: center;
-    /* vertical-align: middle; */
+}
+
+i:hover {
+    color: hsl(300, 69%, 71%);
+    border-color: hsl(300, 69%, 71%);
+    ;
 }
 
 @media only screen and (max-width: 375px) {
-    body{
-        background-image: url('images/bg-mobile.svg'); 
+    body {
+        background-image: url('images/bg-mobile.svg');
     }
-    div.center{
+
+    div.center {
         flex-wrap: wrap;
+        /* text-align: center; */
+        justify-content: center;
+        align-items: center;
+    }
+
+    img.center {
+        min-width: 100%;
+    }
+
+    img.huddle {
+        width: 45%;
+        margin: 0;
+    }
+
+    div.text {
         text-align: center;
     }
-    img.center{
-        width: 100%;
+
+    h2 {
+        font-size: large;
     }
-    img.huddle{
-        width: 45%;
-        padding:0;
+
+    p {
+        text-align: center;
+        font-size: 14px;
     }
-    .content-container{
-        text-align: justify;
+
+    .social {
+        text-align: center;
+        padding: 0;
     }
-  }
+}
