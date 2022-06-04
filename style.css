@@ -50,11 +50,13 @@ button {
     height: 55px;
     color: hsl(257, 40%, 49%);
     font-size: large;
+    border: none;
 }
 
 button:hover {
     background-color: hsl(300, 69%, 71%);
     color: white;
+    cursor: pointer;
 }
 
 .social {
@@ -76,6 +78,7 @@ i {
 i:hover {
     color: hsl(300, 69%, 71%);
     border-color: hsl(300, 69%, 71%);
+    cursor: pointer;
 }
 
 @media only screen and (max-width: 375px) {
